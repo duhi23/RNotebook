@@ -4,10 +4,10 @@ install_github('rNotebook', 'ramnathv')
 library(rNotebook)
 # Usamos viewNotebook aperturando una instancia local
 ls("package:rNotebook")
-rNotebook::viewNotebook("example.Rmd")
+rNotebook::viewNotebook("index.Rmd")
 
-rNotebook::createGist("index.Rmd")
-rNotebook::postGist("gist1")
+rNotebook::createGist("index.Rmd", description = "Diego Paul")
+rNotebook::postGist("index.Rmd")
 
 
 # Instalacion editR
